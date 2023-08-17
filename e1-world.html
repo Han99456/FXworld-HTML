@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>e1-World - 주식에 미치다 | 주미클럽</title>
+    <meta property="og:title" content="e1-World - 주식에 미치다 | 주미클럽" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/12311.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+
+    <!-- input 터치해도 확대 안됨 -->
+
+    <!--
+<script type="text/javascript" src="/js/common.js"> </script>
+<script type="text/javascript" src="/js/worldstock.js"> </script>
+<script type="text/javascript" src="/js/1_main.js"> </script>
+-->
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+      <link href="./e1-world.css" rel="stylesheet" />
+
+      <div class="e-world-container">
+        <div class="e-world-personal-code">
+          <div class="e-world-div">
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/worldstock-ex.js'></script>
+
+<script type='text/javascript' src='/js/worldstock.js'></script>
+<script type='text/javascript' src='/js/worldstock2.js'> </script>
+<script type='text/javascript' src='/js/worldstock3.js'> </script>
+<script type='text/javascript' src='/js/worldstock4.js'> </script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-top-margin-top-margin"></div>
+        <div class="e-world-container01">
+          <span class="e-world-text">글로벌 시황</span>
+          <div class="e-world-container02"></div>
+          <div class="e-world-container03"></div>
+        </div>
+        <div class="e-world-container-main">
+          <div class="e-world-container04">
+            <div class="e-world-nas-daq">
+              <div class="e-world-container05"></div>
+              <span class="e-world-text1 wave-alpha-text">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;해외 거래소 데이터 연동 중
+              </span>
+              <div class="e-world-container06">
+                <span class="e-world-nasdaq1">NASDAQ</span>
+              </div>
+              <div class="e-world-container07">
+                <div id="tradingview_83354" class="e-world-container08"></div>
+              </div>
+            </div>
+            <div class="e-world-hangseng">
+              <div class="e-world-container09"></div>
+              <span class="e-world-text2 wave-alpha-text">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;해외 거래소 데이터 연동 중
+              </span>
+              <div class="e-world-container10">
+                <span class="e-world-nasdaq2">HANGSENG</span>
+              </div>
+              <div class="e-world-container11">
+                <div id="tradingview_f040c" class="e-world-container12"></div>
+              </div>
+            </div>
+            <div class="e-world-bitcoin">
+              <div class="e-world-container13"></div>
+              <span class="e-world-text3 wave-alpha-text">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;해외 거래소 데이터 연동 중
+              </span>
+              <div class="e-world-container14">
+                <span class="e-world-nasdaq3">BITCOIN</span>
+              </div>
+              <div class="e-world-container15">
+                <div id="tradingview_82560" class="e-world-container16"></div>
+              </div>
+            </div>
+            <div class="e-world-nikkei">
+              <div class="e-world-container17"></div>
+              <span class="e-world-text4 wave-alpha-text">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;해외 거래소 데이터 연동 중
+              </span>
+              <div class="e-world-container18">
+                <span class="e-world-nasdaq4">NIKKEI</span>
+              </div>
+              <div class="e-world-container19">
+                <div id="tradingview_8e8fc" class="e-world-container20"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="all-board-bottom-footer-bottom-footer all-board-bottom-footer-root-class-name5"
+        >
+          <div class="all-board-bottom-footer-container"></div>
+          <div class="all-board-bottom-footer-container1">
+            <span class="all-board-bottom-footer-text">
+              <span class="all-board-bottom-footer-text01">
+                주식에 미치다 |
+              </span>
+              <span class="all-board-bottom-footer-text02"></span>
+              <span class="all-board-bottom-footer-text03">주미클럽</span>
+            </span>
+            <div class="all-board-bottom-footer-container2">
+              <div class="all-board-bottom-footer-container3">
+                <span class="all-board-bottom-footer-text04">
+                  <span>HOT영상</span>
+                </span>
+                <span class="all-board-bottom-footer-text05">
+                  <span>커뮤니티</span>
+                </span>
+                <span class="all-board-bottom-footer-text06">
+                  <span>이용약관</span>
+                </span>
+              </div>
+              <div class="all-board-bottom-footer-container4">
+                <span class="all-board-bottom-footer-text07">
+                  <span>이벤트</span>
+                  <br />
+                </span>
+                <span class="all-board-bottom-footer-text10">
+                  <span>고객센터</span>
+                </span>
+              </div>
+            </div>
+            <span class="all-board-bottom-footer-text11">
+              <span>Copyright 주미클럽 All Right Reserved.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>

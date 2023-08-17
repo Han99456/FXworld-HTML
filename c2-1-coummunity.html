@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>c2-1-Coummunity - 주식에 미치다 | 주미클럽</title>
+    <meta
+      property="og:title"
+      content="c2-1-Coummunity - 주식에 미치다 | 주미클럽"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/12311.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+
+    <!-- input 터치해도 확대 안됨 -->
+
+    <!--
+<script type="text/javascript" src="/js/common.js"> </script>
+<script type="text/javascript" src="/js/worldstock.js"> </script>
+<script type="text/javascript" src="/js/1_main.js"> </script>
+-->
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+      <link href="./c2-1-coummunity.css" rel="stylesheet" />
+
+      <div class="c2-coummunity-container">
+        <div class="c2-coummunity-personal-code">
+          <div class="c2-coummunity-code-embed">
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/c1-Coummunity.js'></script>
+<script type='text/javascript' src='/js/c2-Coummunity.js'></script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-common-code-all-board-common-code">
+          <div class="all-board-common-code-code-embed">
+            <dangerous-html
+              html="<link rel='stylesheet' href='/css/common.css' />
+
+<script type='text/javascript' src='/js/00_Allboards.js'></script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-top-margin-top-margin"></div>
+        <div class="c2-coummunity-container01">
+          <div class="c2-coummunity-container02">
+            <div class="c2-coummunity-container03">
+              <span id="boardfree" class="c2-coummunity-text board_title">
+                자유게시판
+              </span>
+              <div class="c2-coummunity-container04"></div>
+            </div>
+            <div class="c2-coummunity-container05">
+              <span
+                id="boardpro"
+                class="c2-coummunity-text01 active board_title"
+              >
+                분석게시판
+              </span>
+              <div
+                class="c2-coummunity-container06 active_undeline active"
+              ></div>
+            </div>
+            <div class="c2-coummunity-container07">
+              <span id="boardall" class="c2-coummunity-text02 board_title">
+                전체게시판
+              </span>
+              <div class="c2-coummunity-container08"></div>
+            </div>
+          </div>
+          <div class="c2-coummunity-container09"></div>
+        </div>
+        <div class="c2-coummunity-list-hit hitstoryset"></div>
+        <div class="c2-coummunity-list storyset"></div>
+        <div class="c2-coummunity-menu">
+          <div class="c2-coummunity-container10">
+            <div class="c2-coummunity-container11">
+              <div id="mystory" class="c2-coummunity-container12">
+                <svg viewBox="0 0 1024 1024" class="c2-coummunity-icon">
+                  <path
+                    d="M768 810v-60q0-58-88-95t-168-37-168 37-88 95v60h512zM512 298q-52 0-90 38t-38 90 38 90 90 38 90-38 38-90-38-90-90-38zM512 128q-18 0-30 12t-12 30 12 31 30 13 30-13 12-31-12-30-30-12zM810 128q34 0 60 26t26 60v596q0 34-26 60t-60 26h-596q-34 0-60-26t-26-60v-596q0-34 26-60t60-26h178q14-38 46-62t74-24 74 24 46 62h178z"
+                  ></path>
+                </svg>
+                <span class="c2-coummunity-text03">내글</span>
+              </div>
+              <div id="findbtn" class="c2-coummunity-container13">
+                <svg viewBox="0 0 1024 1024" class="c2-coummunity-icon02">
+                  <path
+                    d="M992.262 871.396l-242.552-206.294c-25.074-22.566-51.89-32.926-73.552-31.926 57.256-67.068 91.842-154.078 91.842-249.176 0-212.078-171.922-384-384-384-212.076 0-384 171.922-384 384s171.922 384 384 384c95.098 0 182.108-34.586 249.176-91.844-1 21.662 9.36 48.478 31.926 73.552l206.294 242.552c35.322 39.246 93.022 42.554 128.22 7.356s31.892-92.898-7.354-128.22zM384 640c-141.384 0-256-114.616-256-256s114.616-256 256-256 256 114.616 256 256-114.614 256-256 256z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div id="writemanager" class="c2-coummunity-container14">
+              <svg viewBox="0 0 1024 1024" class="c2-coummunity-icon04">
+                <path
+                  d="M0 854h1024v170h-1024v-170zM884 172l-84 84-160-160 84-84q12-12 30-12t30 12l100 100q12 12 12 30t-12 30zM758 298l-428 428h-160v-160l428-428z"
+                ></path>
+              </svg>
+              <span class="c2-coummunity-text04">글쓰기</span>
+            </div>
+          </div>
+          <div id="findstory" class="c2-coummunity-container15">
+            <input
+              type="text"
+              placeholder="검색어를 입력해주세요."
+              class="c2-coummunity-textinput"
+            />
+            <div class="c2-coummunity-container16">
+              <span class="c2-coummunity-text05">검색</span>
+            </div>
+          </div>
+          <div class="c2-coummunity-numbering">
+            <div class="c2-coummunity-container17">
+              <svg viewBox="0 0 1024 1024" class="c2-coummunity-icon06">
+                <path
+                  d="M498 166l-346 346 346 346-76 76-422-422 422-422z"
+                ></path>
+              </svg>
+            </div>
+            <div class="c2-coummunity-container18">
+              <span class="c2-coummunity-text06">1</span>
+            </div>
+            <div class="c2-coummunity-container19">
+              <span class="c2-coummunity-text07">2</span>
+            </div>
+            <div class="c2-coummunity-container20">
+              <span class="c2-coummunity-text08">3</span>
+            </div>
+            <div class="c2-coummunity-container21">
+              <span class="c2-coummunity-text09">4</span>
+            </div>
+            <div class="c2-coummunity-container22">
+              <span class="c2-coummunity-text10">5</span>
+            </div>
+            <div class="c2-coummunity-container23">
+              <svg viewBox="0 0 1024 1024" class="c2-coummunity-icon08">
+                <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="all-board-bottom-footer-bottom-footer all-board-bottom-footer-root-class-name2"
+        >
+          <div class="all-board-bottom-footer-container"></div>
+          <div class="all-board-bottom-footer-container1">
+            <span class="all-board-bottom-footer-text">
+              <span class="all-board-bottom-footer-text01">
+                주식에 미치다 |
+              </span>
+              <span class="all-board-bottom-footer-text02"></span>
+              <span class="all-board-bottom-footer-text03">주미클럽</span>
+            </span>
+            <div class="all-board-bottom-footer-container2">
+              <div class="all-board-bottom-footer-container3">
+                <span class="all-board-bottom-footer-text04">
+                  <span>HOT영상</span>
+                </span>
+                <span class="all-board-bottom-footer-text05">
+                  <span>커뮤니티</span>
+                </span>
+                <span class="all-board-bottom-footer-text06">
+                  <span>이용약관</span>
+                </span>
+              </div>
+              <div class="all-board-bottom-footer-container4">
+                <span class="all-board-bottom-footer-text07">
+                  <span>이벤트</span>
+                  <br />
+                </span>
+                <span class="all-board-bottom-footer-text10">
+                  <span>고객센터</span>
+                </span>
+              </div>
+            </div>
+            <span class="all-board-bottom-footer-text11">
+              <span>Copyright 주미클럽 All Right Reserved.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>

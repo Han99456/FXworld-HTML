@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>g1-Login - 주식에 미치다 | 주미클럽</title>
+    <meta property="og:title" content="g1-Login - 주식에 미치다 | 주미클럽" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/12311.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+
+    <!-- input 터치해도 확대 안됨 -->
+
+    <!--
+<script type="text/javascript" src="/js/common.js"> </script>
+<script type="text/javascript" src="/js/worldstock.js"> </script>
+<script type="text/javascript" src="/js/1_main.js"> </script>
+-->
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+      <link href="./g1-login.css" rel="stylesheet" />
+
+      <div class="g-login-container">
+        <div class="g-login-personal-code">
+          <div class="g-login-code-embed">
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/g1-Login.js'></script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-common-code-all-board-common-code">
+          <div class="all-board-common-code-code-embed">
+            <dangerous-html
+              html="<link rel='stylesheet' href='/css/common.css' />
+
+<script type='text/javascript' src='/js/00_Allboards.js'></script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-top-margin-top-margin"></div>
+        <div class="g-login-container01">
+          <div class="g-login-container02">
+            <span class="g-login-text">
+              <span class="g-login-text01">주미클럽</span>
+              <span class="g-login-text02">&nbsp;</span>
+              <span class="g-login-text03">| 주식에 미치다</span>
+            </span>
+            <span class="g-login-text04">
+              <span>방문을 환영합니다.</span>
+              <br />
+            </span>
+          </div>
+          <div id="loginset" class="g-login-login-set">
+            <input
+              type="text"
+              id="loginid"
+              name="id"
+              placeholder="ID를 입력해주세요."
+              class="g-login-id-input"
+            />
+            <input
+              type="password"
+              id="loginpw"
+              name="pw"
+              placeholder="비밀번호를 입력해주세요."
+              class="g-login-pw-input"
+            />
+            <button
+              id="btnlogin"
+              type="reset"
+              class="g-login-button hoverbtnblue"
+            >
+              <span class="g-login-text07">로그인</span>
+            </button>
+            <div class="g-login-container03">
+              <div class="g-login-container04">
+                <input
+                  type="checkbox"
+                  id="autologin"
+                  name="autologincheck"
+                  checked="true"
+                  disabled=""
+                  class="g-login-checkbox autologin"
+                />
+                <span class="g-login-text08">자동 로그인</span>
+              </div>
+              <span id="findpassword" class="g-login-text09">
+                비밀번호 찾기
+              </span>
+            </div>
+          </div>
+          <div id="loginedset" class="g-login-container05">
+            <div class="g-login-container06">
+              <span class="g-login-text10">로그인 중 입니다.</span>
+            </div>
+            <div class="g-login-container07">
+              <div id="btnloginedlogout" class="g-login-frame-bg hoverbtnwhite">
+                <span class="g-login-text11">재로그인</span>
+              </div>
+            </div>
+          </div>
+          <div class="g-login-container08">
+            <div class="g-login-container09">
+              <svg viewBox="0 0 1024 1024" class="g-login-icon">
+                <path
+                  d="M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM470 298h84v256h-84v-256zM470 640h84v86h-84v-86z"
+                ></path>
+              </svg>
+              <span class="g-login-text12">아직 회원이 아니십니까?</span>
+            </div>
+            <div id="btnmemberjoin" class="g-login-frame-bg1 hoverbtnwhite">
+              <span class="g-login-text13">회원가입</span>
+            </div>
+          </div>
+          <div class="g-login-container10">
+            <div class="g-login-container11">
+              <div class="g-login-container12">
+                <svg viewBox="0 0 1024 1024" class="g-login-icon2">
+                  <path
+                    d="M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM470 298h84v256h-84v-256zM470 640h84v86h-84v-86z"
+                  ></path>
+                </svg>
+                <span class="g-login-text14">사이트 이용 규정</span>
+              </div>
+              <div id="btnsiterule" class="g-login-frame-bg2 hoverbtnwhite">
+                <span class="g-login-text15">이용규정</span>
+              </div>
+            </div>
+            <span class="g-login-text16">
+              <span class="g-login-text17">
+                피씨방, 전산실 등 타인이 함께 사용하는 장소에서
+              </span>
+              <br class="g-login-text18" />
+              <span class="g-login-text19">
+                자동로그인을 진행하실 경우, 비밀번호가 노출될 수 있습니다.
+              </span>
+              <br class="g-login-text20" />
+              <span class="g-login-text21">
+                본인의 휴대폰과 PC에서 자동로그인을 진행해주세요.
+              </span>
+              <br />
+            </span>
+          </div>
+        </div>
+        <div
+          class="all-board-bottom-footer-bottom-footer all-board-bottom-footer-root-class-name7"
+        >
+          <div class="all-board-bottom-footer-container"></div>
+          <div class="all-board-bottom-footer-container1">
+            <span class="all-board-bottom-footer-text">
+              <span class="all-board-bottom-footer-text01">
+                주식에 미치다 |
+              </span>
+              <span class="all-board-bottom-footer-text02"></span>
+              <span class="all-board-bottom-footer-text03">주미클럽</span>
+            </span>
+            <div class="all-board-bottom-footer-container2">
+              <div class="all-board-bottom-footer-container3">
+                <span class="all-board-bottom-footer-text04">
+                  <span>HOT영상</span>
+                </span>
+                <span class="all-board-bottom-footer-text05">
+                  <span>커뮤니티</span>
+                </span>
+                <span class="all-board-bottom-footer-text06">
+                  <span>이용약관</span>
+                </span>
+              </div>
+              <div class="all-board-bottom-footer-container4">
+                <span class="all-board-bottom-footer-text07">
+                  <span>이벤트</span>
+                  <br />
+                </span>
+                <span class="all-board-bottom-footer-text10">
+                  <span>고객센터</span>
+                </span>
+              </div>
+            </div>
+            <span class="all-board-bottom-footer-text11">
+              <span>Copyright 주미클럽 All Right Reserved.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>g3-Memberinfo - 주식에 미치다 | 주미클럽</title>
+    <meta
+      property="og:title"
+      content="g3-Memberinfo - 주식에 미치다 | 주미클럽"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/12311.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+
+    <!-- input 터치해도 확대 안됨 -->
+
+    <!--
+<script type="text/javascript" src="/js/common.js"> </script>
+<script type="text/javascript" src="/js/worldstock.js"> </script>
+<script type="text/javascript" src="/js/1_main.js"> </script>
+-->
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+      <link href="./g3-memberinfo.css" rel="stylesheet" />
+
+      <div class="g-memberinfo-container">
+        <div class="g-memberinfo-personal-code">
+          <div class="g-memberinfo-code-embed">
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/g3-Memberinfo.js'></script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-common-code-all-board-common-code">
+          <div class="all-board-common-code-code-embed">
+            <dangerous-html
+              html="<link rel='stylesheet' href='/css/common.css' />
+
+<script type='text/javascript' src='/js/00_Allboards.js'></script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-top-margin-top-margin"></div>
+        <div class="g-memberinfo-title">
+          <div class="g-memberinfo-container01">
+            <span class="g-memberinfo-text">회원정보변경</span>
+            <div class="g-memberinfo-container02"></div>
+          </div>
+        </div>
+        <div class="g-memberinfo-line"></div>
+        <div class="g-memberinfo-login-info">
+          <div class="g-memberinfo-container03">
+            <div class="g-memberinfo-container04">
+              <input
+                type="text"
+                id="userId"
+                disabled=""
+                placeholder="ID 입력"
+                class="g-memberinfo-id-input input"
+              />
+              <div class="g-memberinfo-frame">
+                <span class="g-memberinfo-text01">유저 아이디</span>
+                <span class="g-memberinfo-text02">
+                  아이디는 변경하실 수 없습니다.
+                </span>
+              </div>
+              <input
+                type="password"
+                id="password"
+                placeholder="비밀번호 입력"
+                class="g-memberinfo-id-input1 input"
+              />
+              <div class="g-memberinfo-frame1">
+                <span class="g-memberinfo-text03">비밀번호</span>
+                <span class="g-memberinfo-text04">
+                  4~12글자의 영문/ 숫자/ 특수문자
+                </span>
+              </div>
+              <input
+                type="password"
+                id="repassword"
+                placeholder="비밀번호 재입력"
+                class="g-memberinfo-id-input2 input"
+              />
+              <div class="g-memberinfo-frame2">
+                <span class="g-memberinfo-text05">
+                  <span>비밀번호 재입력</span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="g-memberinfo-line1"></div>
+        </div>
+        <div class="g-memberinfo-title1">
+          <div class="g-memberinfo-container05">
+            <span class="g-memberinfo-text09">커뮤니티 정보</span>
+          </div>
+        </div>
+        <div class="g-memberinfo-community-info">
+          <div class="g-memberinfo-container06">
+            <div class="g-memberinfo-container07">
+              <input
+                type="text"
+                id="nick"
+                placeholder="닉네임 입력"
+                class="g-memberinfo-id-input3 input"
+              />
+            </div>
+            <div class="g-memberinfo-container08">
+              <div class="g-memberinfo-container09">
+                <span class="g-memberinfo-text10">
+                  <span>커뮤니티</span>
+                  <span>닉네임 (2~8글자)</span>
+                </span>
+              </div>
+            </div>
+            <div class="g-memberinfo-container10">
+              <input
+                type="text"
+                id="email"
+                placeholder="이메일 입력"
+                class="g-memberinfo-id-input4 input"
+              />
+            </div>
+            <div class="g-memberinfo-container11">
+              <div class="g-memberinfo-container12">
+                <div class="g-memberinfo-container13">
+                  <span class="g-memberinfo-text13">회원 이메일</span>
+                </div>
+              </div>
+            </div>
+            <div class="g-memberinfo-container14">
+              <input
+                type="text"
+                id="mobile"
+                placeholder="전화번호"
+                class="g-memberinfo-id-input5 input"
+              />
+            </div>
+            <div class="g-memberinfo-container15">
+              <div class="g-memberinfo-container16">
+                <div class="g-memberinfo-container17">
+                  <span class="g-memberinfo-text14">회원 전화번호</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="g-memberinfo-community-info1">
+          <div class="g-memberinfo-line2"></div>
+        </div>
+        <div class="g-memberinfo-line3"></div>
+        <div id="changememberinfo" class="g-memberinfo-frame5 hoverbtnblue">
+          <span class="g-memberinfo-text15">변경 완료</span>
+        </div>
+        <div
+          class="all-board-bottom-footer-bottom-footer all-board-bottom-footer-root-class-name9"
+        >
+          <div class="all-board-bottom-footer-container"></div>
+          <div class="all-board-bottom-footer-container1">
+            <span class="all-board-bottom-footer-text">
+              <span class="all-board-bottom-footer-text01">
+                주식에 미치다 |
+              </span>
+              <span class="all-board-bottom-footer-text02"></span>
+              <span class="all-board-bottom-footer-text03">주미클럽</span>
+            </span>
+            <div class="all-board-bottom-footer-container2">
+              <div class="all-board-bottom-footer-container3">
+                <span class="all-board-bottom-footer-text04">
+                  <span>HOT영상</span>
+                </span>
+                <span class="all-board-bottom-footer-text05">
+                  <span>커뮤니티</span>
+                </span>
+                <span class="all-board-bottom-footer-text06">
+                  <span>이용약관</span>
+                </span>
+              </div>
+              <div class="all-board-bottom-footer-container4">
+                <span class="all-board-bottom-footer-text07">
+                  <span>이벤트</span>
+                  <br />
+                </span>
+                <span class="all-board-bottom-footer-text10">
+                  <span>고객센터</span>
+                </span>
+              </div>
+            </div>
+            <span class="all-board-bottom-footer-text11">
+              <span>Copyright 주미클럽 All Right Reserved.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>
