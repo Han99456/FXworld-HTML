@@ -1212,7 +1212,7 @@
 .c-coummunity-write-confirm-btn {
   flex: 0 0 auto;
   width: 100%;
-  display: flex;
+  display: none;
   margin-top: 5px;
   align-items: center;
   margin-bottom: 5px;
