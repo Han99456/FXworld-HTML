@@ -7,4 +7,7 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-800);
 }
-
+.all-board-top-margin-root-class-name1 {
+  width: 0%;
+  height: 0px;
+}

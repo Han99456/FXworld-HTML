@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>UI-c1-Coummunity1Write - 주식에 미치다 | 주미클럽</title>
+    <meta
+      property="og:title"
+      content="UI-c1-Coummunity1Write - 주식에 미치다 | 주미클럽"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/12311.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+
+    <!-- input 터치해도 확대 안됨 -->
+
+    <!--
+<script type="text/javascript" src="/js/common.js"> </script>
+<script type="text/javascript" src="/js/worldstock.js"> </script>
+<script type="text/javascript" src="/js/1_main.js"> </script>
+-->
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+      <link href="./ui-c1-coummunity-write.css" rel="stylesheet" />
+
+      <div class="uic-coummunity-write-container">
+        <div class="uic-coummunity-write-personal-code">
+          <div class="uic-coummunity-write-code-embed">
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/c1-Coummunity1Write.js'></script>
+"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-common-code-all-board-common-code">
+          <div class="all-board-common-code-code-embed">
+            <dangerous-html
+              html="<link rel='stylesheet' href='/css/common.css' />
+
+<script type='text/javascript' src='/js/00_Allboards.js'></script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-top-margin-top-margin"></div>
+        <div class="uic-coummunity-write-title">
+          <div class="uic-coummunity-write-story">
+            <div class="uic-coummunity-write-container01">
+              <div class="uic-coummunity-write-container02">
+                <span id="page_title" class="uic-coummunity-write-text">
+                  <span>자유게시판 글쓰기</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="uic-coummunity-write-container03"></div>
+          </div>
+        </div>
+        <div class="uic-coummunity-write-write-text">
+          <div class="uic-coummunity-write-container04"></div>
+          <div class="uic-coummunity-write-title1">
+            <div class="uic-coummunity-write-container05">
+              <div class="uic-coummunity-write-container06">
+                <span class="uic-coummunity-write-text03">
+                  <span>제목</span>
+                  <br />
+                </span>
+              </div>
+              <input
+                type="text"
+                id="titletextinput"
+                name="title"
+                placeholder="제목을 작성해주세요."
+                class="uic-coummunity-write-textinput titletextinput"
+              />
+            </div>
+          </div>
+          <div class="uic-coummunity-write-text06">
+            <div class="uic-coummunity-write-container07">
+              <div class="uic-coummunity-write-container08">
+                <span class="uic-coummunity-write-text07">
+                  <span>내용</span>
+                  <br />
+                </span>
+              </div>
+              <div id="inpapertop" class="uic-coummunity-write-container09">
+                <img
+                  alt="pastedImage"
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0ed0c529-ddeb-4bcb-8ef1-35f5ef7ad2c8/40090314-1593-4f04-a1b0-4460febf203c?org_if_sml=1488475"
+                  class="uic-coummunity-write-pasted-image"
+                />
+              </div>
+              <textarea
+                id="titletextdoc"
+                name="content"
+                placeholder="내용을 작성해주세요."
+                class="uic-coummunity-write-textarea textarea"
+              ></textarea>
+              <div id="inpaperbottom" class="uic-coummunity-write-container10">
+                <img
+                  alt="pastedImage"
+                  src="public/external/pastedimage-1v1f-1500w.png"
+                  class="uic-coummunity-write-pasted-image1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uic-coummunity-write-attached-image">
+          <div class="uic-coummunity-write-container11"></div>
+          <div class="uic-coummunity-write-story1">
+            <div class="uic-coummunity-write-container12">
+              <div class="uic-coummunity-write-container13">
+                <span class="uic-coummunity-write-text10">
+                  <span>이미지 첨부</span>
+                  <br />
+                </span>
+                <div
+                  id="attachfileplus"
+                  class="uic-coummunity-write-container14"
+                >
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="uic-coummunity-write-icon"
+                  >
+                    <path
+                      d="M694.857 548.571v-73.143c0-20-16.571-36.571-36.571-36.571h-146.286v-146.286c0-20-16.571-36.571-36.571-36.571h-73.143c-20 0-36.571 16.571-36.571 36.571v146.286h-146.286c-20 0-36.571 16.571-36.571 36.571v73.143c0 20 16.571 36.571 36.571 36.571h146.286v146.286c0 20 16.571 36.571 36.571 36.571h73.143c20 0 36.571-16.571 36.571-36.571v-146.286h146.286c20 0 36.571-16.571 36.571-36.571zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  id="attachfileminus"
+                  class="uic-coummunity-write-container15"
+                >
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="uic-coummunity-write-icon2"
+                  >
+                    <path
+                      d="M694.857 548.571v-73.143c0-20-16.571-36.571-36.571-36.571h-438.857c-20 0-36.571 16.571-36.571 36.571v73.143c0 20 16.571 36.571 36.571 36.571h438.857c20 0 36.571-16.571 36.571-36.571zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="uic-coummunity-write-container16">
+                <div class="uic-coummunity-write-container17">
+                  <span class="uic-coummunity-write-text13">
+                    <span>첨부파일1</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="uic-coummunity-write-container18">
+                  <input
+                    type="file"
+                    id="upload_1"
+                    name="upload[]"
+                    accept="image/jpeg, image/gif, image/png, video/mp4,video/x-m4v,video/*"
+                    placeholder="제목을 작성해주세요."
+                    class="uic-coummunity-write-textinput01"
+                  />
+                </div>
+                <div
+                  id="deleteuploadfile_1"
+                  class="uic-coummunity-write-container19 btn-del"
+                >
+                  <span class="uic-coummunity-write-text16">삭제</span>
+                </div>
+              </div>
+              <div class="uic-coummunity-write-container20">
+                <div class="uic-coummunity-write-container21">
+                  <span class="uic-coummunity-write-text17">
+                    <span>첨부파일2</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="uic-coummunity-write-container22">
+                  <input
+                    type="file"
+                    id="upload2"
+                    accept="image/jpeg, image/gif, image/png, video/mp4,video/x-m4v,video/*"
+                    placeholder="제목을 작성해주세요."
+                    class="uic-coummunity-write-textinput02"
+                  />
+                </div>
+                <div
+                  id="deleteuploadfile2"
+                  class="uic-coummunity-write-container23"
+                >
+                  <span class="uic-coummunity-write-text20">삭제</span>
+                </div>
+              </div>
+              <div class="uic-coummunity-write-container24">
+                <div class="uic-coummunity-write-container25">
+                  <span class="uic-coummunity-write-text21">
+                    <span>첨부파일3</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="uic-coummunity-write-container26">
+                  <input
+                    type="file"
+                    id="upload3"
+                    accept="image/jpeg, image/gif, image/png, video/mp4,video/x-m4v,video/*"
+                    placeholder="제목을 작성해주세요."
+                    class="uic-coummunity-write-textinput03"
+                  />
+                </div>
+                <div
+                  id="deleteuploadfile3"
+                  class="uic-coummunity-write-container27"
+                >
+                  <span class="uic-coummunity-write-text24">삭제</span>
+                </div>
+              </div>
+              <div class="uic-coummunity-write-container28">
+                <div class="uic-coummunity-write-container29">
+                  <span class="uic-coummunity-write-text25">
+                    <span>첨부파일4</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="uic-coummunity-write-container30">
+                  <input
+                    type="file"
+                    id="upload4"
+                    accept="image/jpeg, image/gif, image/png, video/mp4,video/x-m4v,video/*"
+                    placeholder="제목을 작성해주세요."
+                    class="uic-coummunity-write-textinput04"
+                  />
+                </div>
+                <div
+                  id="deleteuploadfile4"
+                  class="uic-coummunity-write-container31"
+                >
+                  <span class="uic-coummunity-write-text28">삭제</span>
+                </div>
+              </div>
+              <div class="uic-coummunity-write-container32">
+                <div class="uic-coummunity-write-container33">
+                  <span class="uic-coummunity-write-text29">
+                    <span>첨부파일5</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="uic-coummunity-write-container34">
+                  <input
+                    type="file"
+                    id="upload5"
+                    accept="image/jpeg, image/gif, image/png, video/mp4,video/x-m4v,video/*"
+                    placeholder="제목을 작성해주세요."
+                    class="uic-coummunity-write-textinput05"
+                  />
+                </div>
+                <div
+                  id="deleteuploadfile5"
+                  class="uic-coummunity-write-container35"
+                >
+                  <span class="uic-coummunity-write-text32">삭제</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uic-coummunity-write-container36"></div>
+        </div>
+        <div id="manage1WriteMode" class="uic-coummunity-write-manager1">
+          <div class="uic-coummunity-write-container37"></div>
+          <div class="uic-coummunity-write-story2">
+            <div class="uic-coummunity-write-sumnail-attach">
+              <div class="uic-coummunity-write-container38">
+                <span class="uic-coummunity-write-text33">
+                  <span class="uic-coummunity-write-text34">
+                    동영상&nbsp;&nbsp;
+                  </span>
+                  <span class="uic-coummunity-write-text35">
+                    : 동영상 게시판에서만 사용
+                  </span>
+                  <br class="uic-coummunity-write-text36" />
+                </span>
+              </div>
+              <div class="uic-coummunity-write-container39">
+                <div class="uic-coummunity-write-container40">
+                  <span class="uic-coummunity-write-text37">
+                    <span>동영상</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="uic-coummunity-write-container41">
+                  <input
+                    type="file"
+                    id="upload6"
+                    name="upload[]"
+                    accept="image/jpeg, image/gif, image/png"
+                    placeholder="제목을 작성해주세요."
+                    class="uic-coummunity-write-textinput06"
+                  />
+                </div>
+                <div
+                  id="deleteuploadfile11"
+                  class="uic-coummunity-write-container42"
+                >
+                  <span class="uic-coummunity-write-text40">삭제</span>
+                </div>
+              </div>
+            </div>
+            <div class="uic-coummunity-write-sumnail-attach1">
+              <div class="uic-coummunity-write-container43">
+                <span class="uic-coummunity-write-text41">
+                  <span class="uic-coummunity-write-text42">썸네일&nbsp;</span>
+                  <span class="uic-coummunity-write-text43">
+                    : 이벤트 게시판에서만 사용
+                  </span>
+                  <br class="uic-coummunity-write-text44" />
+                </span>
+              </div>
+              <div class="uic-coummunity-write-container44">
+                <div class="uic-coummunity-write-container45">
+                  <span class="uic-coummunity-write-text45">
+                    <span>썸네일</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="uic-coummunity-write-container46">
+                  <input
+                    type="file"
+                    id="upload21"
+                    name="upload[]"
+                    accept="image/jpeg, image/gif, image/png"
+                    data-type="thumb"
+                    placeholder="제목을 작성해주세요."
+                    class="uic-coummunity-write-textinput07"
+                  />
+                </div>
+                <div
+                  id="deleteuploadfile21"
+                  class="uic-coummunity-write-container47"
+                >
+                  <span class="uic-coummunity-write-text48">삭제</span>
+                </div>
+              </div>
+            </div>
+            <div class="uic-coummunity-write-container48">
+              <div class="uic-coummunity-write-container49">
+                <span class="uic-coummunity-write-text49">
+                  <span>관리자 지정 닉네임과 레벨</span>
+                  <br />
+                </span>
+              </div>
+              <div class="uic-coummunity-write-container50">
+                <div class="uic-coummunity-write-container51">
+                  <input
+                    type="radio"
+                    name="userLevel"
+                    value="1"
+                    checked=""
+                    class="uic-coummunity-write-radiobutton"
+                  />
+                  <span class="uic-coummunity-write-text52">준회원</span>
+                  <input
+                    type="radio"
+                    name="userLevel"
+                    value="2"
+                    class="uic-coummunity-write-radiobutton1"
+                  />
+                  <span class="uic-coummunity-write-text53">정회원</span>
+                  <input
+                    type="radio"
+                    name="userLevel"
+                    value="3"
+                    class="uic-coummunity-write-radiobutton2"
+                  />
+                  <span class="uic-coummunity-write-text54">관리자</span>
+                </div>
+                <div class="uic-coummunity-write-container52">
+                  <span class="uic-coummunity-write-text55">닉네임</span>
+                  <input
+                    type="text"
+                    id="manageNick"
+                    name="nickname"
+                    placeholder="닉네임을 입력해주세요."
+                    class="uic-coummunity-write-textinput08 input"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="uic-coummunity-write-container53">
+              <div class="uic-coummunity-write-container54">
+                <span class="uic-coummunity-write-text56">
+                  <span>글 작성일 변경</span>
+                  <br />
+                </span>
+              </div>
+              <div class="uic-coummunity-write-container55">
+                <div class="uic-coummunity-write-container56">
+                  <span class="uic-coummunity-write-text59">작성일</span>
+                  <input
+                    type="datetime-local"
+                    name="nickname"
+                    placeholder="닉네임을 입력해주세요."
+                    class="uic-coummunity-write-textinput09 input"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uic-coummunity-write-container57"></div>
+          <div id="manage2ReadMode" class="uic-coummunity-write-manager">
+            <div class="uic-coummunity-write-container58"></div>
+            <div class="uic-coummunity-write-story3">
+              <div class="uic-coummunity-write-container59">
+                <div class="uic-coummunity-write-container60">
+                  <span class="uic-coummunity-write-text60">
+                    <span>메인 등록</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="uic-coummunity-write-container61">
+                  <span class="uic-coummunity-write-text63">
+                    메인에 등록 : HOT 영상 2개 / 게시글 3개 / 분석글 3개 /
+                    이벤트 2개
+                  </span>
+                  <div class="uic-coummunity-write-container62">
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="1"
+                      checked=""
+                      class="uic-coummunity-write-radiobutton3"
+                    />
+                    <span class="uic-coummunity-write-text64">미등록</span>
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="2"
+                      class="uic-coummunity-write-radiobutton4"
+                    />
+                    <span class="uic-coummunity-write-text65">No. 1</span>
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="3"
+                      class="uic-coummunity-write-radiobutton5"
+                    />
+                    <span class="uic-coummunity-write-text66">No. 2</span>
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="4"
+                      class="uic-coummunity-write-radiobutton6"
+                    />
+                    <span class="uic-coummunity-write-text67">No. 3</span>
+                  </div>
+                  <div class="uic-coummunity-write-container63">
+                    <span class="uic-coummunity-write-text68">reading</span>
+                    <input
+                      type="number"
+                      id="reading"
+                      name="view"
+                      value="0"
+                      placeholder="reading"
+                      class="uic-coummunity-write-textinput10 input"
+                    />
+                  </div>
+                  <div class="uic-coummunity-write-container64">
+                    <span class="uic-coummunity-write-text69">Like</span>
+                    <input
+                      type="number"
+                      id="like"
+                      name="like"
+                      value="0"
+                      placeholder="like"
+                      class="uic-coummunity-write-textinput11 input"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uic-coummunity-write-container65"></div>
+            <div class="uic-coummunity-write-confirm-btn">
+              <div class="uic-coummunity-write-container66">
+                <div id="btn-save" class="uic-coummunity-write-container67">
+                  <span class="uic-coummunity-write-text70">등록</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uic-coummunity-write-confirm-btn1">
+          <div class="uic-coummunity-write-container68">
+            <div id="btn-submit" class="uic-coummunity-write-container69">
+              <svg viewBox="0 0 1024 1024" class="uic-coummunity-write-icon4">
+                <path
+                  d="M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM708 324l60 60-342 342-212-214 60-60 152 152z"
+                ></path>
+              </svg>
+              <span class="uic-coummunity-write-text71">작성완료</span>
+            </div>
+            <div id="btn-cancel" class="uic-coummunity-write-container70">
+              <span class="uic-coummunity-write-text72">취소</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="all-board-bottom-footer-bottom-footer all-board-bottom-footer-root-class-name11"
+        >
+          <div class="all-board-bottom-footer-container"></div>
+          <div class="all-board-bottom-footer-container1">
+            <span class="all-board-bottom-footer-text">
+              <span class="all-board-bottom-footer-text01">
+                주식에 미치다 |
+              </span>
+              <span class="all-board-bottom-footer-text02"></span>
+              <span class="all-board-bottom-footer-text03">주미클럽</span>
+            </span>
+            <div class="all-board-bottom-footer-container2">
+              <div class="all-board-bottom-footer-container3">
+                <span class="all-board-bottom-footer-text04">
+                  <span>HOT영상</span>
+                </span>
+                <span class="all-board-bottom-footer-text05">
+                  <span>커뮤니티</span>
+                </span>
+                <span class="all-board-bottom-footer-text06">
+                  <span>이용약관</span>
+                </span>
+              </div>
+              <div class="all-board-bottom-footer-container4">
+                <span class="all-board-bottom-footer-text07">
+                  <span>이벤트</span>
+                  <br />
+                </span>
+                <span class="all-board-bottom-footer-text10">
+                  <span>고객센터</span>
+                </span>
+              </div>
+            </div>
+            <span class="all-board-bottom-footer-text11">
+              <span>Copyright 주미클럽 All Right Reserved.</span>
+            </span>
+          </div>
+        </div>
+        <input
+          type="text"
+          placeholder="placeholder"
+          class="uic-coummunity-write-textinput12 input"
+        />
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>

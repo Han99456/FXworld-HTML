@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>UI-mobile-c1-Coummunity2Reading - 주식에 미치다 | 주미클럽</title>
+    <meta
+      property="og:title"
+      content="UI-mobile-c1-Coummunity2Reading - 주식에 미치다 | 주미클럽"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/12311.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+
+    <!-- input 터치해도 확대 안됨 -->
+
+    <!--
+<script type="text/javascript" src="/js/common.js"> </script>
+<script type="text/javascript" src="/js/worldstock.js"> </script>
+<script type="text/javascript" src="/js/1_main.js"> </script>
+-->
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+      <link href="./ui-mobile-c1-coummunity-reading.css" rel="stylesheet" />
+
+      <div class="u-mobile-c-coummunity-reading-container">
+        <div class="u-mobile-c-coummunity-reading-personal-code">
+          <div class="u-mobile-c-coummunity-reading-code-embed">
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/c1-Coummunity2Reading.js'></script>
+<script type='text/javascript' src='/js/c1-Coummunity.js'></script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-common-code-all-board-common-code">
+          <div class="all-board-common-code-code-embed">
+            <dangerous-html
+              html="<link rel='stylesheet' href='/css/common.css' />
+
+<script type='text/javascript' src='/js/00_Allboards.js'></script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="all-board-top-margin-top-margin"></div>
+        <div class="u-mobile-c-coummunity-reading-title">
+          <div class="u-mobile-c-coummunity-reading-container001">
+            <div class="u-mobile-c-coummunity-reading-container002">
+              <span class="u-mobile-c-coummunity-reading-text">
+                <span>뉴진스 오랜만에 업한다</span>
+                <br />
+              </span>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container003">
+              <div class="u-mobile-c-coummunity-reading-container004">
+                <div class="u-mobile-c-coummunity-reading-container005">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon"
+                  >
+                    <path
+                      d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text003">
+                    운영자는 운영자
+                  </span>
+                </div>
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="u-mobile-c-coummunity-reading-icon002"
+                >
+                  <path
+                    d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text004">
+                  35분전
+                </span>
+                <svg
+                  viewBox="0 0 804.5714285714286 1024"
+                  class="u-mobile-c-coummunity-reading-icon004"
+                >
+                  <path
+                    d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text005">
+                  &nbsp;232,123
+                </span>
+                <svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon006"
+                >
+                  <path
+                    d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text006">2,431</span>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container006">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="u-mobile-c-coummunity-reading-icon008"
+                >
+                  <path
+                    d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text007">106</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-mobile-c-coummunity-reading-reading-text">
+          <div class="u-mobile-c-coummunity-reading-story">
+            <div class="u-mobile-c-coummunity-reading-container007">
+              <img
+                alt="pastedImage"
+                src="public/external/pastedimage-h46-1500w.png"
+                class="u-mobile-c-coummunity-reading-pasted-image"
+              />
+              <span class="u-mobile-c-coummunity-reading-text008">
+                <span>
+                  뉴진스 업하면 좋아요 많이 받는다고 하더라구요. 그래서 업로드를
+                  했습니다. 사실 어딜가도 뉴진스 저길가도 뉴진스.
+                </span>
+                <br />
+                <br />
+                <span>글 분량이 5줄이 넘었으니 이제 줄입니다.&nbsp;</span>
+                <br />
+                <span>ㄱ건강하세요. ㄱㄱㄱ</span>
+                <br />
+                <br />
+                <span>다음 줄에도 여기저기 남겨봅니다.</span>
+                <br />
+                <span>재탕 환영.</span>
+                <br />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="u-mobile-c-coummunity-reading-like">
+          <div class="u-mobile-c-coummunity-reading-container008">
+            <svg
+              viewBox="0 0 877.7142857142857 1024"
+              class="u-mobile-c-coummunity-reading-icon010"
+            >
+              <path
+                d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+              ></path>
+            </svg>
+            <span class="u-mobile-c-coummunity-reading-text021">1,539회</span>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-container009"></div>
+        </div>
+        <div
+          id="UserManageEdit"
+          class="u-mobile-c-coummunity-reading-user-menu"
+        >
+          <div class="u-mobile-c-coummunity-reading-story01">
+            <div class="u-mobile-c-coummunity-reading-container010">
+              <div class="u-mobile-c-coummunity-reading-container011">
+                <div class="u-mobile-c-coummunity-reading-container012">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon012"
+                  >
+                    <path
+                      d="M0 854h1024v170h-1024v-170zM884 172l-84 84-160-160 84-84q12-12 30-12t30 12l100 100q12 12 12 30t-12 30zM758 298l-428 428h-160v-160l428-428z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text022">
+                    글 수정
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container013">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon014"
+                  >
+                    <path
+                      d="M810 170v86h-596v-86h148l44-42h212l44 42h148zM256 810v-512h512v512q0 34-26 60t-60 26h-340q-34 0-60-26t-26-60z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text023">
+                    글 삭제
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-mobile-c-coummunity-reading-comment-num">
+          <div class="u-mobile-c-coummunity-reading-story02">
+            <div class="u-mobile-c-coummunity-reading-container014">
+              <div class="u-mobile-c-coummunity-reading-container015">
+                <svg
+                  viewBox="0 0 1152 1024"
+                  class="u-mobile-c-coummunity-reading-icon016"
+                >
+                  <path
+                    d="M1088 901.166c0 45.5 26.028 84.908 64 104.184v15.938c-10.626 1.454-21.472 2.224-32.5 2.224-68.008 0-129.348-28.528-172.722-74.264-26.222 6.982-54.002 10.752-82.778 10.752-159.058 0-288-114.616-288-256s128.942-256 288-256c159.058 0 288 114.616 288 256 0 55.348-19.764 106.592-53.356 148.466-6.824 14.824-10.644 31.312-10.644 48.7zM230.678 221.186c-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.15 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.948 2.662 42.344 4.016 63.594 4.020v128c-27.128-0.002-53.754-1.738-79.742-5.042-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416 278.458 0 504.992 180.614 511.836 405.52-41.096-18.316-85.84-29.422-132.262-32.578-11.53-56.068-45.402-108.816-98.252-151.756-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text024">
+                  <span class="u-mobile-c-coummunity-reading-text025">2</span>
+                  <span>Comments</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-mobile-c-coummunity-reading-comment">
+          <div class="u-mobile-c-coummunity-reading-container016">
+            <div class="u-mobile-c-coummunity-reading-container017">
+              <div class="u-mobile-c-coummunity-reading-container018">
+                <div
+                  id="BestAddwrite"
+                  class="u-mobile-c-coummunity-reading-container019"
+                >
+                  <span class="u-mobile-c-coummunity-reading-text028">
+                    BEST1
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container020">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon018"
+                  >
+                    <path
+                      d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text029">
+                    운영자는 운영자
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container021">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon020"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text030">
+                    35분전
+                  </span>
+                </div>
+                <div
+                  id="addwriteDelete"
+                  class="u-mobile-c-coummunity-reading-container022"
+                >
+                  <span class="u-mobile-c-coummunity-reading-text031">
+                    삭제
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container023">
+                  <span
+                    id="addwriteReply"
+                    class="u-mobile-c-coummunity-reading-text032"
+                  >
+                    답글
+                  </span>
+                </div>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container024">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="u-mobile-c-coummunity-reading-icon022"
+                >
+                  <path
+                    d="M128 170.667v298.667c0 58.88 23.936 112.299 62.464 150.869s91.989 62.464 150.869 62.464h409.003l-140.501 140.501c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l213.333-213.333c3.925-3.925 7.083-8.619 9.259-13.824s3.243-10.795 3.243-16.341c0-10.923-4.181-21.845-12.501-30.165l-213.333-213.333c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l140.501 140.501h-409.003c-35.371 0-67.285-14.293-90.496-37.504s-37.504-55.125-37.504-90.496v-298.667c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text033">
+                  양자 컴퓨터는
+                </span>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container025">
+                <svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon024"
+                >
+                  <path
+                    d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text034">2,431</span>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container026">
+              <div class="u-mobile-c-coummunity-reading-container027">
+                <div
+                  id="BestAddwrite"
+                  class="u-mobile-c-coummunity-reading-container028"
+                >
+                  <span class="u-mobile-c-coummunity-reading-text035">
+                    BEST1
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container029">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon026"
+                  >
+                    <path
+                      d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text036">
+                    운영자는 운영자
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container030">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon028"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text037">
+                    35분전
+                  </span>
+                </div>
+                <div
+                  id="addwriteDelete"
+                  class="u-mobile-c-coummunity-reading-container031"
+                >
+                  <span class="u-mobile-c-coummunity-reading-text038">
+                    삭제
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container032">
+                  <span
+                    id="addwriteReply"
+                    class="u-mobile-c-coummunity-reading-text039"
+                  >
+                    답글
+                  </span>
+                </div>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container033">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="u-mobile-c-coummunity-reading-icon030"
+                >
+                  <path
+                    d="M128 170.667v298.667c0 58.88 23.936 112.299 62.464 150.869s91.989 62.464 150.869 62.464h409.003l-140.501 140.501c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l213.333-213.333c3.925-3.925 7.083-8.619 9.259-13.824s3.243-10.795 3.243-16.341c0-10.923-4.181-21.845-12.501-30.165l-213.333-213.333c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l140.501 140.501h-409.003c-35.371 0-67.285-14.293-90.496-37.504s-37.504-55.125-37.504-90.496v-298.667c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text040">
+                  양자 컴퓨터는 양자역학에 따라 존재하면서도 존재하지 않는
+                  특이점을 지니고, 관측에 따라 존재 유무에 따른 배고프다.
+                </span>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container034">
+                <svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon032"
+                >
+                  <path
+                    d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text041">2,431</span>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container035"></div>
+            <div
+              id="commentandcomment"
+              class="u-mobile-c-coummunity-reading-container036"
+            ></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-container037">
+            <div class="u-mobile-c-coummunity-reading-container038">
+              <div class="u-mobile-c-coummunity-reading-container039">
+                <div class="u-mobile-c-coummunity-reading-container040">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon034"
+                  >
+                    <path
+                      d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text042">
+                    운영자는 운영자
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container041">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon036"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text043">
+                    35분전
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container042">
+                  <span class="u-mobile-c-coummunity-reading-text044">
+                    답글
+                  </span>
+                </div>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container043">
+                <span class="u-mobile-c-coummunity-reading-text045">
+                  양자 컴퓨터는 양자역학에 따라 존재하면서도 존재하지 않는
+                  특이점을 지니고, 관측에 따라 존재 유무에 따른 배고프다.
+                </span>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container044">
+                <svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon038"
+                >
+                  <path
+                    d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text046">2,431</span>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container045"></div>
+          </div>
+        </div>
+        <div
+          id="manageRefine"
+          class="u-mobile-c-coummunity-reading-container046"
+        >
+          <div id="12311" class="u-mobile-c-coummunity-reading-container047">
+            <div class="u-mobile-c-coummunity-reading-container048">
+              <span class="u-mobile-c-coummunity-reading-text047">
+                <span>댓글 수정</span>
+                <br />
+              </span>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container049">
+              <input
+                type="radio"
+                name="Grade"
+                value="1"
+                checked=""
+                class="u-mobile-c-coummunity-reading-radiobutton"
+              />
+              <span class="u-mobile-c-coummunity-reading-text050">준회원</span>
+              <input
+                type="radio"
+                name="Grade"
+                value="2"
+                class="u-mobile-c-coummunity-reading-radiobutton1"
+              />
+              <span class="u-mobile-c-coummunity-reading-text051">정회원</span>
+              <input
+                type="radio"
+                name="Grade"
+                value="3"
+                class="u-mobile-c-coummunity-reading-radiobutton2"
+              />
+              <span class="u-mobile-c-coummunity-reading-text052">관리자</span>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container050">
+              <span class="u-mobile-c-coummunity-reading-text053">닉네임</span>
+              <input
+                type="text"
+                id="manageNick"
+                name="nickname"
+                placeholder="작성자 닉네임을 입력해주세요."
+                class="u-mobile-c-coummunity-reading-textinput input"
+              />
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container051">
+              <span class="u-mobile-c-coummunity-reading-text054">작성일</span>
+              <input
+                type="datetime-local"
+                name="nickname"
+                placeholder="닉네임을 입력해주세요."
+                class="u-mobile-c-coummunity-reading-textinput1 input"
+              />
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container052">
+              <span class="u-mobile-c-coummunity-reading-text055">
+                좋아요 수 변경
+              </span>
+              <input
+                type="number"
+                name="nickname"
+                placeholder="좋아요 수 변경"
+                class="u-mobile-c-coummunity-reading-textinput2 input"
+              />
+            </div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-container053">
+            <textarea
+              placeholder="댓글 내용 변경"
+              class="u-mobile-c-coummunity-reading-textarea textarea"
+            ></textarea>
+            <div class="u-mobile-c-coummunity-reading-container054">
+              <div class="u-mobile-c-coummunity-reading-container055">
+                <span class="u-mobile-c-coummunity-reading-text056">등록</span>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container056">
+                <span class="u-mobile-c-coummunity-reading-text057">
+                  댓글삭제
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="commentuser"
+          class="u-mobile-c-coummunity-reading-container057"
+        >
+          <div class="u-mobile-c-coummunity-reading-comment-user">
+            <div class="u-mobile-c-coummunity-reading-container058">
+              <div
+                id="manageReply"
+                class="u-mobile-c-coummunity-reading-container059"
+              >
+                <div class="u-mobile-c-coummunity-reading-container060">
+                  <span class="u-mobile-c-coummunity-reading-text058">
+                    <span>관리자 지정 닉네임과 레벨</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container061">
+                  <input
+                    type="radio"
+                    name="Grade"
+                    value="1"
+                    checked=""
+                    class="u-mobile-c-coummunity-reading-radiobutton3"
+                  />
+                  <span class="u-mobile-c-coummunity-reading-text061">
+                    준회원
+                  </span>
+                  <input
+                    type="radio"
+                    name="Grade"
+                    value="2"
+                    class="u-mobile-c-coummunity-reading-radiobutton4"
+                  />
+                  <span class="u-mobile-c-coummunity-reading-text062">
+                    정회원
+                  </span>
+                  <input
+                    type="radio"
+                    name="Grade"
+                    value="3"
+                    class="u-mobile-c-coummunity-reading-radiobutton5"
+                  />
+                  <span class="u-mobile-c-coummunity-reading-text063">
+                    관리자
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container062">
+                  <span class="u-mobile-c-coummunity-reading-text064">
+                    닉네임
+                  </span>
+                  <input
+                    type="text"
+                    id="manageNick"
+                    name="nickname"
+                    placeholder="작성자 닉네임을 입력해주세요."
+                    class="u-mobile-c-coummunity-reading-textinput3 input"
+                  />
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container063">
+                  <span class="u-mobile-c-coummunity-reading-text065">
+                    작성일
+                  </span>
+                  <input
+                    type="datetime-local"
+                    name="nickname"
+                    placeholder="닉네임을 입력해주세요."
+                    class="u-mobile-c-coummunity-reading-textinput4 input"
+                  />
+                </div>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container064">
+                <textarea
+                  placeholder="댓글을 작성해주세요."
+                  class="u-mobile-c-coummunity-reading-textarea1 textarea"
+                ></textarea>
+                <div class="u-mobile-c-coummunity-reading-container065">
+                  <span class="u-mobile-c-coummunity-reading-text066">
+                    등록
+                  </span>
+                </div>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container066">
+                <span class="u-mobile-c-coummunity-reading-text067">
+                  <span>기분좋은 댓글은 작성자에게 힘이 됩니다.</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-mobile-c-coummunity-reading-menu">
+          <div class="u-mobile-c-coummunity-reading-story03">
+            <div class="u-mobile-c-coummunity-reading-container067">
+              <div class="u-mobile-c-coummunity-reading-container068">
+                <div class="u-mobile-c-coummunity-reading-container069">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon040"
+                  >
+                    <path
+                      d="M498 166l-346 346 346 346-76 76-422-422 422-422z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text070">
+                    이전 글
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container070">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon042"
+                  >
+                    <path
+                      d="M298 640h86v86h-86v-86zM298 470h86v84h-86v-84zM298 298h86v86h-86v-86zM470 640h256v86h-256v-86zM470 470h256v84h-256v-84zM470 298h256v86h-256v-86zM858 128q14 0 26 11t12 27v692q0 14-12 26t-26 12h-692q-16 0-27-12t-11-26v-692q0-38 38-38h692zM810 214h-596v596h596v-596z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text071">
+                    글 목록
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container071">
+                  <span class="u-mobile-c-coummunity-reading-text072">
+                    다음 글
+                  </span>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon044"
+                  >
+                    <path
+                      d="M250 176l92-90 426 426-426 426-92-90 338-336z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-mobile-c-coummunity-reading-list-hit">
+          <div class="u-mobile-c-coummunity-reading-container072"></div>
+          <div class="u-mobile-c-coummunity-reading-story04">
+            <div class="u-mobile-c-coummunity-reading-container073">
+              <div class="u-mobile-c-coummunity-reading-container074">
+                <span class="u-mobile-c-coummunity-reading-text073">
+                  <span>HIT</span>
+                  <br />
+                </span>
+                <span class="u-mobile-c-coummunity-reading-text076">
+                  <span>게시판 운영규칙</span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon046"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container075">
+                <div class="u-mobile-c-coummunity-reading-container076">
+                  <div class="u-mobile-c-coummunity-reading-container077">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon048"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text079">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon050"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text080">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon052"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text081">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon054"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text082">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container078">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon056"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text083">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container079"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story05">
+            <div class="u-mobile-c-coummunity-reading-container080">
+              <div class="u-mobile-c-coummunity-reading-container081">
+                <span class="u-mobile-c-coummunity-reading-text084">
+                  <span>HIT</span>
+                  <br />
+                </span>
+                <span class="u-mobile-c-coummunity-reading-text087">
+                  <span>2023년 8월 12일 글로벌 중 글로벌</span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon058"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container082">
+                <div class="u-mobile-c-coummunity-reading-container083">
+                  <div class="u-mobile-c-coummunity-reading-container084">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon060"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text090">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon062"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text091">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon064"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text092">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon066"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text093">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container085">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon068"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text094">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container086"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story06">
+            <div class="u-mobile-c-coummunity-reading-container087">
+              <div class="u-mobile-c-coummunity-reading-container088">
+                <span class="u-mobile-c-coummunity-reading-text095">
+                  <span>HIT</span>
+                  <br />
+                </span>
+                <span class="u-mobile-c-coummunity-reading-text098">
+                  <span>글로벌 중 글로</span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon070"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container089">
+                <div class="u-mobile-c-coummunity-reading-container090">
+                  <div class="u-mobile-c-coummunity-reading-container091">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon072"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text101">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon074"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text102">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon076"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text103">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon078"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text104">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container092">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon080"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text105">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container093"></div>
+          </div>
+        </div>
+        <div class="u-mobile-c-coummunity-reading-list">
+          <div class="u-mobile-c-coummunity-reading-story07">
+            <div class="u-mobile-c-coummunity-reading-container094">
+              <div class="u-mobile-c-coummunity-reading-container095">
+                <span class="u-mobile-c-coummunity-reading-text106">
+                  <span>
+                    2023년 8월 12일 글로벌 중 글로벌 오브 글러벌 시황
+                    시황분석입니다.
+                  </span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon082"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container096">
+                <div class="u-mobile-c-coummunity-reading-container097">
+                  <div class="u-mobile-c-coummunity-reading-container098">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon084"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text109">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon086"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text110">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon088"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text111">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon090"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text112">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container099">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon092"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text113">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container100"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story08">
+            <div class="u-mobile-c-coummunity-reading-container101">
+              <div class="u-mobile-c-coummunity-reading-container102">
+                <span class="u-mobile-c-coummunity-reading-text114">
+                  <span>2023년 8월 12일 글시황분석입니다.</span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon094"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container103">
+                <div class="u-mobile-c-coummunity-reading-container104">
+                  <div class="u-mobile-c-coummunity-reading-container105">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon096"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text117">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon098"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text118">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon100"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text119">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon102"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text120">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container106">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon104"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text121">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container107"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story09">
+            <div class="u-mobile-c-coummunity-reading-container108">
+              <div class="u-mobile-c-coummunity-reading-container109">
+                <span class="u-mobile-c-coummunity-reading-text122">
+                  <span>
+                    2023년 8월 12일 글로벌 중 글로벌 오브 글러벌 시황
+                    시황분석입니다.
+                  </span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon106"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container110">
+                <div class="u-mobile-c-coummunity-reading-container111">
+                  <div class="u-mobile-c-coummunity-reading-container112">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon108"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text125">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon110"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text126">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon112"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text127">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon114"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text128">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container113">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon116"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text129">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container114"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story10">
+            <div class="u-mobile-c-coummunity-reading-container115">
+              <div class="u-mobile-c-coummunity-reading-container116">
+                <span class="u-mobile-c-coummunity-reading-text130">
+                  <span>
+                    2023년 8월 12일 글로벌 중 글로벌 오브 글러벌 시황
+                    시황분석입니다.
+                  </span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon118"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container117">
+                <div class="u-mobile-c-coummunity-reading-container118">
+                  <div class="u-mobile-c-coummunity-reading-container119">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon120"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text133">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon122"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text134">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon124"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text135">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon126"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text136">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container120">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon128"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text137">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container121"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story11">
+            <div class="u-mobile-c-coummunity-reading-container122">
+              <div class="u-mobile-c-coummunity-reading-container123">
+                <span class="u-mobile-c-coummunity-reading-text138">
+                  <span>
+                    2023년 8월 12일 글로벌 중 글로벌 오브 글러벌 시황
+                    시황분석입니다.
+                  </span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon130"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container124">
+                <div class="u-mobile-c-coummunity-reading-container125">
+                  <div class="u-mobile-c-coummunity-reading-container126">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon132"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text141">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon134"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text142">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon136"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text143">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon138"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text144">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container127">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon140"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text145">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container128"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story12">
+            <div class="u-mobile-c-coummunity-reading-container129">
+              <div class="u-mobile-c-coummunity-reading-container130">
+                <span class="u-mobile-c-coummunity-reading-text146">
+                  <span>
+                    2023년 8월 12일 글로벌 중 글로벌 오브 글러벌 시황
+                    시황분석입니다.
+                  </span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon142"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container131">
+                <div class="u-mobile-c-coummunity-reading-container132">
+                  <div class="u-mobile-c-coummunity-reading-container133">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon144"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text149">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon146"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text150">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon148"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text151">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon150"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text152">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container134">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon152"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text153">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container135"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story13">
+            <div class="u-mobile-c-coummunity-reading-container136">
+              <div class="u-mobile-c-coummunity-reading-container137">
+                <span class="u-mobile-c-coummunity-reading-text154">
+                  <span>
+                    2023년 8월 12일 글로벌 중 글로벌 오브 글러벌 시황
+                    시황분석입니다.
+                  </span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon154"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container138">
+                <div class="u-mobile-c-coummunity-reading-container139">
+                  <div class="u-mobile-c-coummunity-reading-container140">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon156"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text157">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon158"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text158">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon160"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text159">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon162"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text160">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container141">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon164"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text161">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container142"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story14">
+            <div class="u-mobile-c-coummunity-reading-container143">
+              <div class="u-mobile-c-coummunity-reading-container144">
+                <span class="u-mobile-c-coummunity-reading-text162">
+                  <span>
+                    2023년 8월 12일 글로벌 중 글로벌 오브 글러벌 시황
+                    시황분석입니다.
+                  </span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon166"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container145">
+                <div class="u-mobile-c-coummunity-reading-container146">
+                  <div class="u-mobile-c-coummunity-reading-container147">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon168"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text165">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon170"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text166">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon172"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text167">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon174"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text168">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container148">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon176"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text169">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container149"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story15">
+            <div class="u-mobile-c-coummunity-reading-container150">
+              <div class="u-mobile-c-coummunity-reading-container151">
+                <span class="u-mobile-c-coummunity-reading-text170">
+                  <span>
+                    2023년 8월 12일 글로벌 중 글로벌 오브 글러벌 시황
+                    시황분석입니다.
+                  </span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon178"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container152">
+                <div class="u-mobile-c-coummunity-reading-container153">
+                  <div class="u-mobile-c-coummunity-reading-container154">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon180"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text173">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon182"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text174">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon184"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text175">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon186"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text176">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container155">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon188"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text177">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container156"></div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-story16">
+            <div class="u-mobile-c-coummunity-reading-container157">
+              <div class="u-mobile-c-coummunity-reading-container158">
+                <span class="u-mobile-c-coummunity-reading-text178">
+                  <span>
+                    2023년 8월 12일 글로벌 중 글로벌 오브 글러벌 시황
+                    시황분석입니다.
+                  </span>
+                  <br />
+                </span>
+                <svg
+                  viewBox="0 0 1097.142857142857 1024"
+                  class="u-mobile-c-coummunity-reading-icon190"
+                >
+                  <path
+                    d="M365.714 329.143c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM950.857 548.571v256h-804.571v-109.714l182.857-182.857 91.429 91.429 292.571-292.571zM1005.714 146.286h-914.286c-9.714 0-18.286 8.571-18.286 18.286v694.857c0 9.714 8.571 18.286 18.286 18.286h914.286c9.714 0 18.286-8.571 18.286-18.286v-694.857c0-9.714-8.571-18.286-18.286-18.286zM1097.143 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-914.286c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h914.286c50.286 0 91.429 41.143 91.429 91.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container159">
+                <div class="u-mobile-c-coummunity-reading-container160">
+                  <div class="u-mobile-c-coummunity-reading-container161">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="u-mobile-c-coummunity-reading-icon192"
+                    >
+                      <path
+                        d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"
+                      ></path>
+                    </svg>
+                    <span class="u-mobile-c-coummunity-reading-text181">
+                      운영자는 운영자
+                    </span>
+                  </div>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon194"
+                  >
+                    <path
+                      d="M534 342v180l148 90-30 52-182-110v-212h64zM896 432h-290l118-120q-88-88-211-89t-211 85q-36 36-62 97t-26 111 26 111 62 97 98 62 112 26 113-26 99-62q86-86 86-208h86q0 158-112 268-112 112-272 112t-272-112q-112-110-112-267t112-269q46-46 125-79t145-33 145 33 125 79l116-120v304z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text182">
+                    35분전
+                  </span>
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="u-mobile-c-coummunity-reading-icon196"
+                  >
+                    <path
+                      d="M804.571 877.714c0 100.571-208.571 146.286-402.286 146.286s-402.286-45.714-402.286-146.286c0-77.714 116-114.286 213.143-130.857 20-3.429 38.857 9.714 42.286 29.714s-9.714 38.857-29.714 42.286c-117.714 20.571-150.857 52.571-152.571 59.429 5.714 19.429 115.429 72.571 329.143 72.571s323.429-53.143 329.143-73.714c-1.714-5.714-34.857-37.714-152.571-58.286-20-3.429-33.143-22.286-29.714-42.286s22.286-33.143 42.286-29.714c97.143 16.571 213.143 53.143 213.143 130.857zM585.143 365.714v219.429c0 20-16.571 36.571-36.571 36.571h-36.571v219.429c0 20-16.571 36.571-36.571 36.571h-146.286c-20 0-36.571-16.571-36.571-36.571v-219.429h-36.571c-20 0-36.571-16.571-36.571-36.571v-219.429c0-40.571 32.571-73.143 73.143-73.143h219.429c40.571 0 73.143 32.571 73.143 73.143zM530.286 146.286c0 70.857-57.143 128-128 128s-128-57.143-128-128 57.143-128 128-128 128 57.143 128 128z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text183">
+                    &nbsp;232,123
+                  </span>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="u-mobile-c-coummunity-reading-icon198"
+                  >
+                    <path
+                      d="M146.286 768c0-20-16.571-36.571-36.571-36.571s-36.571 16.571-36.571 36.571 16.571 36.571 36.571 36.571 36.571-16.571 36.571-36.571zM804.571 438.857c0-38.857-34.857-73.143-73.143-73.143h-201.143c0-66.857 54.857-115.429 54.857-182.857 0-66.857-13.143-109.714-91.429-109.714-36.571 37.143-17.714 124.571-73.143 182.857-16 16.571-29.714 34.286-44 52-25.714 33.143-93.714 130.857-138.857 130.857h-18.286v365.714h18.286c32 0 84.571 20.571 115.429 31.429 62.857 21.714 128 41.714 195.429 41.714h69.143c64.571 0 109.714-25.714 109.714-95.429 0-10.857-1.143-21.714-2.857-32 24-13.143 37.143-45.714 37.143-72 0-13.714-3.429-27.429-10.286-39.429 19.429-18.286 30.286-41.143 30.286-68 0-18.286-8-45.143-20-58.857 26.857-0.571 42.857-52 42.857-73.143zM877.714 438.286c0 33.143-9.714 65.714-28 93.143 3.429 12.571 5.143 26.286 5.143 39.429 0 28.571-7.429 57.143-21.714 82.286 1.143 8 1.714 16.571 1.714 24.571 0 36.571-12 73.143-34.286 101.714 1.143 108-72.571 171.429-178.286 171.429h-73.714c-81.143 0-156.571-24-232-50.286-16.571-5.714-62.857-22.857-78.857-22.857h-164.571c-40.571 0-73.143-32.571-73.143-73.143v-365.714c0-40.571 32.571-73.143 73.143-73.143h156.571c22.286-14.857 61.143-66.286 78.286-88.571 19.429-25.143 39.429-49.714 61.143-73.143 34.286-36.571 16-126.857 73.143-182.857 13.714-13.143 32-21.143 51.429-21.143 59.429 0 116.571 21.143 144.571 76.571 17.714 34.857 20 68 20 106.286 0 40-10.286 74.286-27.429 109.714h100.571c78.857 0 146.286 66.857 146.286 145.714z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text184">
+                    2,431
+                  </span>
+                </div>
+                <div class="u-mobile-c-coummunity-reading-container162">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="u-mobile-c-coummunity-reading-icon200"
+                  >
+                    <path
+                      d="M512 192c-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.152 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.974 2.666 42.398 4.020 63.676 4.020 54.934 0 107.988-8.66 157.694-25.742 46.712-16.054 88.306-38.744 123.628-67.444 66.214-53.796 102.678-122.984 102.678-194.814s-36.464-141.016-102.678-194.814c-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742zM512 64v0c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                    ></path>
+                  </svg>
+                  <span class="u-mobile-c-coummunity-reading-text185">106</span>
+                </div>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container163"></div>
+          </div>
+        </div>
+        <div class="u-mobile-c-coummunity-reading-menu1">
+          <div class="u-mobile-c-coummunity-reading-container164">
+            <div class="u-mobile-c-coummunity-reading-container165">
+              <div class="u-mobile-c-coummunity-reading-container166">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="u-mobile-c-coummunity-reading-icon202"
+                >
+                  <path
+                    d="M768 810v-60q0-58-88-95t-168-37-168 37-88 95v60h512zM512 298q-52 0-90 38t-38 90 38 90 90 38 90-38 38-90-38-90-90-38zM512 128q-18 0-30 12t-12 30 12 31 30 13 30-13 12-31-12-30-30-12zM810 128q34 0 60 26t26 60v596q0 34-26 60t-60 26h-596q-34 0-60-26t-26-60v-596q0-34 26-60t60-26h178q14-38 46-62t74-24 74 24 46 62h178z"
+                  ></path>
+                </svg>
+                <span class="u-mobile-c-coummunity-reading-text186">내글</span>
+              </div>
+              <div class="u-mobile-c-coummunity-reading-container167">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="u-mobile-c-coummunity-reading-icon204"
+                >
+                  <path
+                    d="M992.262 871.396l-242.552-206.294c-25.074-22.566-51.89-32.926-73.552-31.926 57.256-67.068 91.842-154.078 91.842-249.176 0-212.078-171.922-384-384-384-212.076 0-384 171.922-384 384s171.922 384 384 384c95.098 0 182.108-34.586 249.176-91.844-1 21.662 9.36 48.478 31.926 73.552l206.294 242.552c35.322 39.246 93.022 42.554 128.22 7.356s31.892-92.898-7.354-128.22zM384 640c-141.384 0-256-114.616-256-256s114.616-256 256-256 256 114.616 256 256-114.614 256-256 256z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container168">
+              <svg
+                viewBox="0 0 1024 1024"
+                class="u-mobile-c-coummunity-reading-icon206"
+              >
+                <path
+                  d="M0 854h1024v170h-1024v-170zM884 172l-84 84-160-160 84-84q12-12 30-12t30 12l100 100q12 12 12 30t-12 30zM758 298l-428 428h-160v-160l428-428z"
+                ></path>
+              </svg>
+              <span class="u-mobile-c-coummunity-reading-text187">글쓰기</span>
+            </div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-container169">
+            <input
+              type="text"
+              placeholder="검색어를 입력해주세요."
+              class="u-mobile-c-coummunity-reading-textinput5"
+            />
+            <div class="u-mobile-c-coummunity-reading-container170">
+              <span class="u-mobile-c-coummunity-reading-text188">검색</span>
+            </div>
+          </div>
+          <div class="u-mobile-c-coummunity-reading-numbering">
+            <div class="u-mobile-c-coummunity-reading-container171">
+              <svg
+                viewBox="0 0 1024 1024"
+                class="u-mobile-c-coummunity-reading-icon208"
+              >
+                <path
+                  d="M498 166l-346 346 346 346-76 76-422-422 422-422z"
+                ></path>
+              </svg>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container172">
+              <span class="u-mobile-c-coummunity-reading-text189">1</span>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container173">
+              <span class="u-mobile-c-coummunity-reading-text190">2</span>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container174">
+              <span class="u-mobile-c-coummunity-reading-text191">3</span>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container175">
+              <span class="u-mobile-c-coummunity-reading-text192">4</span>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container176">
+              <span class="u-mobile-c-coummunity-reading-text193">5</span>
+            </div>
+            <div class="u-mobile-c-coummunity-reading-container177">
+              <svg
+                viewBox="0 0 1024 1024"
+                class="u-mobile-c-coummunity-reading-icon210"
+              >
+                <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="all-board-bottom-footer-bottom-footer all-board-bottom-footer-root-class-name19"
+        >
+          <div class="all-board-bottom-footer-container"></div>
+          <div class="all-board-bottom-footer-container1">
+            <span class="all-board-bottom-footer-text">
+              <span class="all-board-bottom-footer-text01">
+                주식에 미치다 |
+              </span>
+              <span class="all-board-bottom-footer-text02"></span>
+              <span class="all-board-bottom-footer-text03">주미클럽</span>
+            </span>
+            <div class="all-board-bottom-footer-container2">
+              <div class="all-board-bottom-footer-container3">
+                <span class="all-board-bottom-footer-text04">
+                  <span>HOT영상</span>
+                </span>
+                <span class="all-board-bottom-footer-text05">
+                  <span>커뮤니티</span>
+                </span>
+                <span class="all-board-bottom-footer-text06">
+                  <span>이용약관</span>
+                </span>
+              </div>
+              <div class="all-board-bottom-footer-container4">
+                <span class="all-board-bottom-footer-text07">
+                  <span>이벤트</span>
+                  <br />
+                </span>
+                <span class="all-board-bottom-footer-text10">
+                  <span>고객센터</span>
+                </span>
+              </div>
+            </div>
+            <span class="all-board-bottom-footer-text11">
+              <span>Copyright 주미클럽 All Right Reserved.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>

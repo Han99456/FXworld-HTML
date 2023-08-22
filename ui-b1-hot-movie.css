@@ -1,0 +1,514 @@
+.all-board-common-code-all-board-common-code {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: none;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.all-board-common-code-code-embed {
+  width: 0px;
+  height: 0px;
+}
+
+.all-board-bottom-footer-bottom-footer {
+  width: 100%;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.all-board-bottom-footer-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 1px;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  margin-bottom: 5px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #c7c7c7;
+}
+.all-board-bottom-footer-container1 {
+  flex: 0 0 auto;
+  width: 96%;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  margin-left: 2%;
+  margin-right: 2%;
+  flex-direction: column;
+}
+.all-board-bottom-footer-text {
+  color: var(--dl-color-gray-black);
+  width: 50%;
+  font-size: 10px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+}
+.all-board-bottom-footer-text01 {
+  color: var(--dl-color-gray-700);
+}
+.all-board-bottom-footer-text02 {
+  color: var(--dl-color-gray-500);
+}
+.all-board-bottom-footer-text03 {
+  color: var(--dl-color-gray-black);
+}
+.all-board-bottom-footer-container2 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.all-board-bottom-footer-container3 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.all-board-bottom-footer-text04 {
+  color: var(--dl-color-secondary-400);
+  width: 50%;
+  font-size: 10px;
+  text-align: left;
+}
+.all-board-bottom-footer-text05 {
+  color: var(--dl-color-secondary-400);
+  width: 50%;
+  font-size: 10px;
+  text-align: left;
+}
+.all-board-bottom-footer-text06 {
+  color: var(--dl-color-secondary-400);
+  width: 50%;
+  font-size: 10px;
+  text-align: left;
+}
+.all-board-bottom-footer-container4 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.all-board-bottom-footer-text07 {
+  color: var(--dl-color-secondary-400);
+  width: 50%;
+  font-size: 10px;
+  text-align: right;
+}
+.all-board-bottom-footer-text10 {
+  color: var(--dl-color-secondary-400);
+  width: 50%;
+  font-size: 10px;
+  text-align: right;
+}
+.all-board-bottom-footer-text11 {
+  color: var(--dl-color-gray-700);
+  width: 100%;
+  font-size: 10px;
+  align-self: center;
+  font-style: normal;
+  margin-top: 15px;
+  text-align: center;
+  font-family: Gothic A1;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.uib-hot-movie-container {
+  width: 1040px;
+  display: flex;
+  z-index: -1;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.uib-hot-movie-personal-code {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: none;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.uib-hot-movie-code-embed {
+  width: 0px;
+  height: 0px;
+}
+.uib-hot-movie-title {
+  flex: 0 0 auto;
+  width: 1030px;
+  display: flex;
+  align-self: center;
+  margin-top: 20px;
+  align-items: flex-start;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex-direction: column;
+}
+.uib-hot-movie-text {
+  color: var(--dl-color-gray-black);
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.uib-hot-movie-container01 {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 3px;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-black);
+}
+.uib-hot-movie-container02 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 1px;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-800);
+}
+.uib-hot-movie-manager-menu {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-direction: column;
+  justify-content: center;
+}
+.uib-hot-movie-container03 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.uib-hot-movie-container04 {
+  width: 73px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e00000;
+}
+.uib-hot-movie-icon {
+  fill: var(--dl-color-gray-white);
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+.uib-hot-movie-text01 {
+  color: var(--dl-color-gray-white);
+  font-size: 12px;
+}
+.uib-hot-movie-main-movie {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.uib-hot-movie-container05 {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.uib-hot-movie-pasted-image {
+  width: 100%;
+  align-self: center;
+}
+.uib-hot-movie-container06 {
+  width: 92%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.uib-hot-movie-container07 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.uib-hot-movie-text02 {
+  color: var(--dl-color-gray-black);
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 3px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-left: 2px;
+  letter-spacing: -0.5px;
+}
+.uib-hot-movie-container08 {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: row;
+  justify-content: center;
+}
+.uib-hot-movie-image {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 200px;
+}
+.uib-hot-movie-container09 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.uib-hot-movie-text05 {
+  color: var(--dl-color-gray-500);
+  font-size: 14px;
+}
+.uib-hot-movie-text06 {
+  color: var(--dl-color-gray-500);
+  font-size: 14px;
+}
+.uib-hot-movie-like {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.uib-hot-movie-container10 {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 35px;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius40);
+  margin-bottom: 5px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e8e8e8;
+}
+.uib-hot-movie-icon2 {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.uib-hot-movie-text07 {
+  color: var(--dl-color-gray-black);
+  margin-top: 1px;
+}
+.uib-hot-movie-container11 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 1px;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-800);
+}
+.uib-hot-movie-list-movie {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.uib-hot-movie-container12 {
+  flex: 0 0 auto;
+  width: 92%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.uib-hot-movie-image1 {
+  width: 100%;
+  align-self: center;
+  object-fit: cover;
+}
+.uib-hot-movie-container13 {
+  width: 92%;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.uib-hot-movie-image2 {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 200px;
+}
+.uib-hot-movie-container14 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.uib-hot-movie-text08 {
+  color: var(--dl-color-gray-black);
+  font-size: 16px;
+  margin-top: 3px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+.uib-hot-movie-text09 {
+  color: var(--dl-color-gray-500);
+  font-size: 13px;
+}
+.uib-hot-movie-list-movie1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.uib-hot-movie-container15 {
+  flex: 0 0 auto;
+  width: 92%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.uib-hot-movie-image3 {
+  width: 100%;
+  align-self: center;
+  object-fit: cover;
+}
+.uib-hot-movie-container16 {
+  width: 92%;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.uib-hot-movie-image4 {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 200px;
+}
+.uib-hot-movie-container17 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.uib-hot-movie-text10 {
+  color: var(--dl-color-gray-black);
+  font-size: 16px;
+  margin-top: 3px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+.uib-hot-movie-text14 {
+  color: var(--dl-color-gray-500);
+  font-size: 13px;
+}
+.uib-hot-movie-list-movie2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.uib-hot-movie-container18 {
+  flex: 0 0 auto;
+  width: 92%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.uib-hot-movie-image5 {
+  width: 100%;
+  align-self: center;
+  object-fit: cover;
+}
+.uib-hot-movie-container19 {
+  width: 92%;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.uib-hot-movie-image6 {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 200px;
+}
+.uib-hot-movie-container20 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.uib-hot-movie-text15 {
+  color: var(--dl-color-gray-black);
+  font-size: 16px;
+  margin-top: 3px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+.uib-hot-movie-text19 {
+  color: var(--dl-color-gray-500);
+  font-size: 13px;
+}
