@@ -12,7 +12,7 @@
   height: 0px;
 }
 
-.p-all-borad-bottom-pc-all-borad-bottom {
+.pc-all-borad-bottom-pc-all-borad-bottom {
   width: 1040px;
   display: flex;
   position: relative;
@@ -22,7 +22,7 @@
   justify-content: space-between;
   background-color: var(--dl-color-gray-white);
 }
-.p-all-borad-bottom-container {
+.pc-all-borad-bottom-container {
   flex: 0 0 auto;
   width: 100%;
   height: 1px;
@@ -32,7 +32,7 @@
   justify-content: center;
   background-color: #c7c7c7;
 }
-.p-all-borad-bottom-container1 {
+.pc-all-borad-bottom-container1 {
   flex: 0 0 auto;
   width: 96%;
   display: flex;
@@ -41,7 +41,7 @@
   align-items: center;
   flex-direction: column;
 }
-.p-all-borad-bottom-text {
+.pc-all-borad-bottom-text {
   color: var(--dl-color-gray-black);
   width: 50%;
   font-size: 14px;
@@ -49,29 +49,29 @@
   text-align: center;
   font-weight: bold;
 }
-.p-all-borad-bottom-text01 {
+.pc-all-borad-bottom-text01 {
   color: var(--dl-color-gray-700);
 }
-.p-all-borad-bottom-text02 {
+.pc-all-borad-bottom-text02 {
   color: var(--dl-color-gray-500);
 }
-.p-all-borad-bottom-text03 {
+.pc-all-borad-bottom-text03 {
   color: var(--dl-color-gray-black);
 }
-.p-all-borad-bottom-container2 {
+.pc-all-borad-bottom-container2 {
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
 }
-.p-all-borad-bottom-container3 {
+.pc-all-borad-bottom-container3 {
   width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.p-all-borad-bottom-text04 {
+.pc-all-borad-bottom-text04 {
   color: var(--dl-color-gray-500);
   width: 100%;
   font-size: 13px;
@@ -79,7 +79,7 @@
   text-align: left;
   font-weight: 400;
 }
-.p-all-borad-bottom-text05 {
+.pc-all-borad-bottom-text05 {
   color: var(--dl-color-gray-500);
   width: 100%;
   font-size: 13px;
@@ -87,7 +87,7 @@
   text-align: left;
   font-weight: 400;
 }
-.p-all-borad-bottom-text06 {
+.pc-all-borad-bottom-text06 {
   color: var(--dl-color-gray-500);
   width: 100%;
   font-size: 13px;
@@ -95,14 +95,14 @@
   text-align: left;
   font-weight: 400;
 }
-.p-all-borad-bottom-container4 {
+.pc-all-borad-bottom-container4 {
   width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.p-all-borad-bottom-text07 {
+.pc-all-borad-bottom-text07 {
   color: var(--dl-color-gray-500);
   width: 100%;
   font-size: 13px;
@@ -110,7 +110,7 @@
   text-align: right;
   font-weight: 400;
 }
-.p-all-borad-bottom-text10 {
+.pc-all-borad-bottom-text10 {
   color: var(--dl-color-gray-500);
   width: 100%;
   font-size: 13px;
@@ -118,7 +118,7 @@
   text-align: right;
   font-weight: 400;
 }
-.p-all-borad-bottom-text11 {
+.pc-all-borad-bottom-text11 {
   color: var(--dl-color-gray-700);
   width: 100%;
   font-size: 13px;
@@ -129,6 +129,9 @@
   font-family: Gothic A1;
   font-weight: 500;
   margin-bottom: 15px;
+}
+.pc-all-borad-bottom-root-class-name {
+  margin-top: 4px;
 }
 
 .pc-f1cs-container {
@@ -203,16 +206,21 @@
   margin-right: 5px;
   flex-direction: column;
 }
-.pc-f1cs-pasted-image {
-  width: 600px;
-  align-self: center;
-}
 .pc-f1cs-container05 {
   width: 600px;
   display: flex;
   align-self: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
+}
+.pc-f1cs-image {
+  width: 350px;
+  align-self: center;
+  margin-top: 25px;
+  object-fit: cover;
+  margin-right: 35px;
+  margin-bottom: 15px;
 }
 .pc-f1cs-container06 {
   display: flex;
@@ -225,16 +233,16 @@
   color: var(--dl-color-gray-black);
   font-size: 18px;
   font-style: normal;
-  margin-top: 3px;
-  font-weight: 500;
-  line-height: 1.3;
-  margin-left: 2px;
-  letter-spacing: -0.5px;
+  text-align: center;
+  font-family: Nanum Myeongjo;
+  font-weight: 800;
+  line-height: 1.8;
+  margin-bottom: 45px;
 }
 .pc-f1cs-like {
   flex: 0 0 auto;
   width: 600px;
-  display: flex;
+  display: none;
   align-self: center;
   margin-top: 3px;
   align-items: center;
@@ -260,7 +268,7 @@
   height: 24px;
   margin-right: 10px;
 }
-.pc-f1cs-text04 {
+.pc-f1cs-text07 {
   color: var(--dl-color-gray-black);
   margin-top: 1px;
 }
@@ -286,6 +294,7 @@
 .pc-f1cs-container09 {
   flex: 0 0 auto;
   width: 400px;
+  display: none;
   margin-top: 30px;
   align-items: flex-start;
   border-radius: var(--dl-radius-radius-radius40);
@@ -301,20 +310,21 @@
   align-items: center;
   flex-direction: row;
 }
-.pc-f1cs-pasted-image1 {
+.pc-f1cs-pasted-image {
   width: 30px;
   margin-top: 5px;
   margin-left: 18%;
   margin-right: 5%;
   margin-bottom: 5px;
 }
-.pc-f1cs-text05 {
+.pc-f1cs-text08 {
   color: var(--dl-color-gray-black);
   font-size: 16px;
 }
 .pc-f1cs-container11 {
   flex: 0 0 auto;
   width: 400px;
+  display: none;
   margin-top: 8px;
   align-items: flex-start;
   border-radius: var(--dl-radius-radius-radius40);
@@ -330,20 +340,21 @@
   align-items: center;
   flex-direction: row;
 }
-.pc-f1cs-pasted-image2 {
+.pc-f1cs-pasted-image1 {
   width: 30px;
   margin-top: 5px;
   margin-left: 18%;
   margin-right: 5%;
   margin-bottom: 5px;
 }
-.pc-f1cs-text08 {
+.pc-f1cs-text11 {
   color: var(--dl-color-gray-black);
   font-size: 16px;
 }
 .pc-f1cs-container13 {
   flex: 0 0 auto;
   width: 400px;
+  display: none;
   margin-top: 8px;
   align-items: flex-start;
   border-radius: var(--dl-radius-radius-radius40);
@@ -359,20 +370,21 @@
   align-items: center;
   flex-direction: row;
 }
-.pc-f1cs-pasted-image3 {
+.pc-f1cs-pasted-image2 {
   width: 30px;
   margin-top: 5px;
   margin-left: 18%;
   margin-right: 5%;
   margin-bottom: 5px;
 }
-.pc-f1cs-text11 {
+.pc-f1cs-text14 {
   color: var(--dl-color-gray-black);
   font-size: 16px;
 }
 .pc-f1cs-container15 {
   flex: 0 0 auto;
   width: 400px;
+  display: none;
   margin-top: 8px;
   align-items: flex-start;
   border-radius: var(--dl-radius-radius-radius40);
@@ -388,14 +400,14 @@
   align-items: center;
   flex-direction: row;
 }
-.pc-f1cs-pasted-image4 {
+.pc-f1cs-pasted-image3 {
   width: 30px;
   margin-top: 5px;
   margin-left: 18%;
   margin-right: 5%;
   margin-bottom: 5px;
 }
-.pc-f1cs-text14 {
+.pc-f1cs-text17 {
   color: var(--dl-color-gray-black);
   font-size: 16px;
 }
@@ -411,14 +423,14 @@
   flex-direction: column;
   background-color: #d4d4d4;
 }
-.pc-f1cs-text17 {
+.pc-f1cs-text20 {
   width: 90%;
   font-size: 16px;
   margin-top: 10px;
   text-align: center;
   margin-bottom: 10px;
 }
-.pc-f1cs-text20 {
+.pc-f1cs-text23 {
   width: 90%;
   font-size: 16px;
   text-align: center;

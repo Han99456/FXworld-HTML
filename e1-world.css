@@ -143,7 +143,7 @@
 
 
 
-.e-world-container {
+.e1world-container {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -153,7 +153,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.e-world-personal-code {
+.e1world-personal-code {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -161,11 +161,11 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.e-world-div {
+.e1world-div {
   width: 0px;
   height: 0px;
 }
-.e-world-container01 {
+.e1world-container01 {
   flex: 0 0 auto;
   width: 96%;
   display: flex;
@@ -176,7 +176,7 @@
   margin-right: 2%;
   flex-direction: column;
 }
-.e-world-text {
+.e1world-text {
   color: var(--dl-color-gray-black);
   width: 25%;
   height: 23px;
@@ -184,7 +184,7 @@
   text-align: center;
   font-weight: bold;
 }
-.e-world-container02 {
+.e1world-container02 {
   flex: 0 0 auto;
   width: 25%;
   height: 3px;
@@ -194,7 +194,7 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-black);
 }
-.e-world-container03 {
+.e1world-container03 {
   flex: 0 0 auto;
   width: 100%;
   height: 1px;
@@ -204,7 +204,7 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-800);
 }
-.e-world-container-main {
+.e1world-container-main {
   width: 100%;
   height: auto;
   display: flex;
@@ -213,14 +213,14 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.e-world-container04 {
+.e1world-container04 {
   display: flex;
   align-items: stretch;
   flex-direction: column;
   pointer-events: none;
   justify-content: space-between;
 }
-.e-world-nas-daq {
+.e1world-nas-daq {
   flex: 0 0 auto;
   width: auto;
   height: 175px;
@@ -231,7 +231,7 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-900);
 }
-.e-world-container05 {
+.e1world-container05 {
   top: 122px;
   flex: 0 0 auto;
   left: 35px;
@@ -245,7 +245,7 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-800);
 }
-.e-world-text1 {
+.e1world-text1 {
   top: 106px;
   color: #0090ba;
   width: 100%;
@@ -255,7 +255,7 @@
   font-size: 10px;
   text-align: center;
 }
-.e-world-container06 {
+.e1world-container06 {
   top: 96px;
   flex: 0 0 auto;
   left: 12px;
@@ -275,7 +275,7 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
-.e-world-nasdaq1 {
+.e1world-nasdaq1 {
   color: #0090ba;
   font-size: 12px;
   align-self: center;
@@ -283,19 +283,19 @@
   text-align: left;
   font-weight: 800;
 }
-.e-world-container07 {
+.e1world-container07 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.e-world-container08 {
+.e1world-container08 {
   width: 96%;
   height: 180px;
   align-self: center;
 }
-.e-world-hangseng {
+.e1world-hangseng {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -307,7 +307,7 @@
   justify-content: center;
   background-color: #faf8f9;
 }
-.e-world-container09 {
+.e1world-container09 {
   top: 121px;
   flex: 0 0 auto;
   left: 35px;
@@ -321,7 +321,7 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-800);
 }
-.e-world-text2 {
+.e1world-text2 {
   top: 105px;
   color: #de252c;
   width: 100%;
@@ -331,7 +331,7 @@
   font-size: 10px;
   text-align: center;
 }
-.e-world-container10 {
+.e1world-container10 {
   top: 96px;
   flex: 0 0 auto;
   left: 12px;
@@ -351,7 +351,7 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
-.e-world-nasdaq2 {
+.e1world-nasdaq2 {
   color: #de252c;
   font-size: 12px;
   align-self: center;
@@ -359,19 +359,19 @@
   text-align: left;
   font-weight: 800;
 }
-.e-world-container11 {
+.e1world-container11 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.e-world-container12 {
+.e1world-container12 {
   width: 96%;
   height: 180px;
   align-self: center;
 }
-.e-world-bitcoin {
+.e1world-bitcoin {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -383,7 +383,7 @@
   justify-content: center;
   background-color: var(--dl-color-gray-900);
 }
-.e-world-container13 {
+.e1world-container13 {
   top: 121px;
   flex: 0 0 auto;
   left: 35px;
@@ -397,7 +397,7 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-800);
 }
-.e-world-text3 {
+.e1world-text3 {
   top: 105px;
   color: #f7931a;
   width: 100%;
@@ -407,7 +407,7 @@
   font-size: 10px;
   text-align: center;
 }
-.e-world-container14 {
+.e1world-container14 {
   top: 96px;
   flex: 0 0 auto;
   left: 12px;
@@ -427,7 +427,7 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
-.e-world-nasdaq3 {
+.e1world-nasdaq3 {
   color: #f7931a;
   font-size: 12px;
   align-self: center;
@@ -435,19 +435,19 @@
   text-align: left;
   font-weight: 800;
 }
-.e-world-container15 {
+.e1world-container15 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.e-world-container16 {
+.e1world-container16 {
   width: 96%;
   height: 180px;
   align-self: center;
 }
-.e-world-nikkei {
+.e1world-nikkei {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -459,7 +459,7 @@
   justify-content: center;
   background-color: #faf8f9;
 }
-.e-world-container17 {
+.e1world-container17 {
   top: 121px;
   flex: 0 0 auto;
   left: 35px;
@@ -473,7 +473,7 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-800);
 }
-.e-world-text4 {
+.e1world-text4 {
   top: 105px;
   color: var(--dl-color-secondary-redreal);
   width: 100%;
@@ -483,7 +483,7 @@
   font-size: 10px;
   text-align: center;
 }
-.e-world-container18 {
+.e1world-container18 {
   top: 96px;
   flex: 0 0 auto;
   left: 12px;
@@ -503,7 +503,7 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
-.e-world-nasdaq4 {
+.e1world-nasdaq4 {
   color: var(--dl-color-secondary-redreal);
   font-size: 12px;
   align-self: center;
@@ -511,14 +511,14 @@
   text-align: left;
   font-weight: 800;
 }
-.e-world-container19 {
+.e1world-container19 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.e-world-container20 {
+.e1world-container20 {
   width: 96%;
   height: 180px;
   align-self: center;
